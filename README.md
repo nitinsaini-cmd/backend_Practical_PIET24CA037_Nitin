@@ -1,30 +1,40 @@
-# Backend Practical Exam
+# Student Portal API
 
-**Registration Number:** PIET24CA037  
-**Name:** Nitin  
+## Project Description
+A backend application for student registration, login and role-based access using Node.js, Express.js and MongoDB.
 
-## Project Structure
-- `file/`
-  - `A1.js`: Task 1 - Library Book Management REST API
-  - `A2.js`: Task 2 - Student Portal with JWT Authentication & Role Authorization
-  - `A3.js`: Additional Command File
-- `outputs/`
-  - `A1.png`: Output screenshot for Task 1
-  - `A2.png`: Output screenshot for Task 2
-  - `A3.png`: Output screenshot for Task 3
+## Technologies Used
+- Node.js
+- Express.js
+- MongoDB
+- Mongoose
+- JWT Authentication
+- bcryptjs
+- Joi
+- Helmet
+- CORS
+- Express Rate Limit
 
-## Installation
-```bash
-npm install
-```
+## Features
+1. Student and Admin Registration
+2. User Login
+3. Password Hashing
+4. JWT Authentication
+5. Protected Profile Route
+6. Admin-only Students Route
+7. Input Validation
+8. Security Middleware
 
-## Running the Tasks
-- Task 1:
-```bash
-node file/A1.js
-```
+## API Endpoints
 
-- Task 2:
-```bash
-node file/A2.js
-```
+| Method | Endpoint | Description |
+|---|---|---|
+| POST | /register | Register user |
+| POST | /login | Login user |
+| GET | /profile | View profile |
+| GET | /students | View students (Admin only) |
+
+## Testing
+All API endpoints were tested using Thunder Client.
+
+Screenshots of API testing are available in the outputs folder.
